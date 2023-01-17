@@ -1,18 +1,20 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Navigate, useRoutes } from 'react-router-dom';
 
-export function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<h1>Hello World</h1>} />
-            <Route path="*" element={null} />
-        </Routes>
-    );
-}
+import Home from '@/Pages/Home';
 
-export function WrappedApp() {
-    return (
-        <HashRouter>
-            <App />
-        </HashRouter>
-    );
-}
+export default () => {
+    return useRoutes([
+        {
+            path: '/',
+            element: <Home />,
+        },
+        {
+            path: '404',
+            element: <h1>NOT FOUND</h1>,
+        },
+        {
+            path: '*',
+            element: <Navigate to="404" />,
+        },
+    ]);
+};
