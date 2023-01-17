@@ -1,4 +1,4 @@
-import CV from '@assets/CV.pdf';
+import CV from '@assets/IAN-BALIJAWA.pdf';
 const CTA = () => {
     return (
         <div className="cta">
