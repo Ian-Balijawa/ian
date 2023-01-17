@@ -1,13 +1,13 @@
-import { App, WrappedApp } from './App';
 import { describe, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
+import App from './App';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('App', () => {
     it('Renders hello world', () => {
         // ARRANGE
-        render(<WrappedApp />);
+        render(<App />);
         // ACT
         // EXPECT
         expect(
