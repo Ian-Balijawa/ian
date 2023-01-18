@@ -1,8 +1,25 @@
+.spinner__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
 .loader {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
+    bottom: 10rem;
 }
 .loader::after,
 .loader::before {
@@ -34,7 +51,8 @@
 
 .voxel-dog {
     position: relative;
-    margin: 0 auto;
+    margin: -5rem auto auto;
+    bottom: -5rem;
     width: clamp(380px, 580px, 740px);
     height: clamp(280px, 450px, 640px);
     background-size: 100%;
