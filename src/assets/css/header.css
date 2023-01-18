@@ -1,7 +1,9 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
     overflow: hidden;
+    position: relative;
+    background: transparent;
+    top: -10rem;
 }
 
 .header__container {
@@ -36,6 +38,15 @@ header {
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
+}
+
+.scroll__down {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 56%;
+    top: 78rem;
 }
 
 /* ======================== ME ======================= */
@@ -87,4 +98,7 @@ header {
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width: 1024px) {
+    .scroll__down {
+        display: none;
+    }
 }
