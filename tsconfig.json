@@ -19,7 +19,8 @@
         "paths": {
             "@/*": ["src/*"],
             "@components/*": ["src/components/*"],
-            "@assets/*": ["src/assets/*"]
+            "@assets/*": ["src/assets/*"],
+            "@css/*": ["src/assets/css/*"]
         }
     },
     "include": ["vite.config.ts", ".eslintrc", "src"],
