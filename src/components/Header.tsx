@@ -1,7 +1,7 @@
-import './header.css';
+import '@css/header.css';
 
 import CTA from '@/components/CTA';
-import Social from '@/components/Header/Socials';
+import Social from '@/components/Socials';
 import me from '@assets/me.png';
 
 const Header = () => {

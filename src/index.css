@@ -15,17 +15,18 @@ body {
 }
 
 :root {
+	
 	--color-bg: #1f1f38;
 	--color-bg-variant: #2c2c6c;
 	--color-bg-primary: #4db5ff --color-primary-variant:rgba(77, 181, 255, 0.4);
 	--color-white: #ffff;
 	--color-ligt: rgba(255, 255, 255, 0.6);
 	--color-primary:#56BBF3;
-	--transition: all 400ms ease;
+	--transition: all 400ms ease; 
 
-	--container-width-lg: 75%;
+	--container-width-lg: 70%;
 	--container-width-md: 86%;
-	--container-width-dm: 90%;
+	--container-width-sm: 90%;
 }
 
 html {
@@ -99,8 +100,8 @@ a:hover {
 .btn {
 	width: max-content;
 	display: inline-block;
-	color: var(--color-bg-primary);
-	padding: 0.75rem 1.2rem;
+	color: var(--color-white);
+	padding: .8rem 2rem;
 	border-radius: 0.4rem;
 	border: 1px solid var(--color-primary);
 	transition: var(--transition);
@@ -110,11 +111,11 @@ a:hover {
 	background: var(--color-white);
 	color: var(--color-bg);
 	border-color: transparent;
+	cursor: pointer;
 }
 
 .btn-primary {
 	background: var(--color-primary);
-	color: var(--color-bg);
 }
 
 img {
@@ -137,7 +138,7 @@ img {
 
 /* =============================== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:600px){
 	.container{
 		width:var(--container-width-sm)
 	}
