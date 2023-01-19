@@ -12,6 +12,7 @@
     transition: all 0.5s ease-in-out;
     opacity: 1;
     visibility: visible;
+    background: #000;
 }
 
 .loader {
@@ -51,9 +52,19 @@
 
 .voxel-dog {
     position: relative;
-    margin: -5rem auto auto;
+    margin: -5rem auto;
     bottom: -5rem;
-    width: clamp(380px, 580px, 740px);
-    height: clamp(280px, 450px, 640px);
+    height: 40rem;
     background-size: 100%;
+    width: 100%;
 }
+
+canvas {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #000; */
+}
+
+/* ====================== MEDIA QUERIES () ======================= */
