@@ -12,7 +12,6 @@
     transition: all 0.5s ease-in-out;
     opacity: 1;
     visibility: visible;
-    background: #000;
 }
 
 .loader {
@@ -64,7 +63,4 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
-    /* background: #000; */
 }
-
-/* ====================== MEDIA QUERIES () ======================= */
