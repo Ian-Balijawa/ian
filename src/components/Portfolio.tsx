@@ -54,7 +54,7 @@ const data: IData[] = [
     },
     {
         img: dissertation,
-        description: 'Under graduate Dissertation (Mobile App)',
+        description: 'Under Graduate Dissertation (Mobile App)',
         href: '#',
         github: '#',
     },
