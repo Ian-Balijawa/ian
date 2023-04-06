@@ -1,6 +1,64 @@
 import '@css/portfolio.css';
 
-import IMG from '@assets/me.png';
+import delv from '/images/delv.png';
+import theme from '/images/theme.png';
+import dissertation from '/images/dissertation.png';
+import mysite from '/images/mysite.png';
+import tinylabz from '/images/tinylabz.png';
+import silverlight from '/images/silverlight.png';
+import cefs from '/images/cefs.png';
+
+interface IData {
+    img: string;
+    description: string;
+    href: string;
+    github: string;
+}
+
+const data: IData[] = [
+    {
+        img: tinylabz,
+        description: 'Company Website',
+        href: 'tinylabz.vercel.app',
+        github: '#',
+    },
+    {
+        img: mysite,
+        description: 'Personal Portfolio',
+        href: 'iyn.vercel.app',
+        github: '#',
+    },
+    {
+        img: delv,
+        description: 'Delv Careers',
+        href: 'delvcareers.com',
+        github: '#',
+    },
+    {
+        img: cefs,
+        description: 'Complaint Evaluation Feedback System',
+        href: 'cefs.vercel.app',
+        github: '#',
+    },
+    {
+        img: theme,
+        description: 'Dark Night Rises Vscode Extension(Theme)',
+        href: '#',
+        github: '#',
+    },
+    {
+        img: silverlight,
+        description: 'Silver Light Vscode Extension(Theme)',
+        href: '#',
+        github: '#',
+    },
+    {
+        img: dissertation,
+        description: 'Under graduate Dissertation (Mobile App)',
+        href: '#',
+        github: '#',
+    },
+];
 
 const Portfolio = () => {
     return (
@@ -9,23 +67,23 @@ const Portfolio = () => {
             <h2>Portfolio</h2>
 
             <div className="container portfolio__container">
-                {Array.from({ length: 6 }).map((e, index) => (
+                {data.map(({ img, href, description, github }, index) => (
                     <article className="portfolio__item" key={index}>
                         <div className="portfolio__item-image">
-                            <img src={IMG} alt="port-img" />
+                            <img src={img} alt="port-img" />
                         </div>
                         <div className="portfolio__item-image">
-                            <h3>This is a portfolio item title</h3>
+                            <h3>{description}</h3>
                             <div className="portfolio__item-cta">
                                 <a
-                                    href="https://github.com/Ian-Balijawa"
+                                    href={github}
                                     target={'_blank'}
                                     className="btn"
                                 >
                                     Github
                                 </a>
                                 <a
-                                    href="https://dribble.com/Alien_pixels"
+                                    href={href}
                                     className="btn btn-primary"
                                     target={'_blank'}
                                 >

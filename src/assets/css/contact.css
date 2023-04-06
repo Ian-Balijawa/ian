@@ -34,10 +34,14 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
-    padding: 0.3rem 0.5rem;
-    border-radius: 1em;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4em;
 
     border: 1px solid #56bbf3;
+}
+.contact__option a:hover {
+    background:#56BBF3;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* ======================== FORM ======================== */
@@ -55,7 +59,7 @@ textarea {
     border: 2px solid var(--color-bg-variant);
     resize: none;
     color: var(--color-white);
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
