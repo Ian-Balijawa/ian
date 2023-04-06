@@ -4,7 +4,9 @@ import 'swiper/css/pagination';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import AVATAR from '@assets/me.png';
+import nl from '/images/nl.png';
+import jk from '/images/jk.png';
+import rm from '/images/rm.png';
 import { Pagination } from 'swiper';
 
 interface ITestimonial {
@@ -15,29 +17,19 @@ interface ITestimonial {
 
 const testimonials: ITestimonial[] = [
     {
-        avatar: AVATAR,
-        name: 'Allen',
-        review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur suscipit atque rem culpa quas quae, incidunt aliquam voluptas repudiandae magnam expedita eum recusandae inventore commodi similique sed laudantium asperiores delectus? Quibusdam optio sint blanditiis iste reiciendis! Tempora, sit non.',
+        avatar: jk,
+        name: 'Ocen Jackson',
+        review: "Working with Ian has been an absolute pleasure. As a project manager, I've been impressed with his ability to understand complex requirements and deliver high-quality code that meets our needs. he're an excellent communicator and always go above and beyond to ensure that our projects are successful. I highly recommend Ian for any software development needs.",
     },
     {
-        avatar: AVATAR,
-        name: 'Alan',
-        review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur suscipit atque rem culpa quas quae, incidunt aliquam voluptas repudiandae magnam expedita eum recusandae inventore commodi similique sed laudantium asperiores delectus? Quibusdam optio sint blanditiis iste reiciendis! Tempora, sit non.',
+        avatar: nl,
+        name: 'Nelson Adralia',
+        review: "I had the pleasure of working with Ian on a web application project, and I was blown away by his technical expertise and attention to detail. he're not only an excellent developer but also a great team player and problem-solver. Ian went above and beyond to ensure that the project was delivered on time and within budget. I would definitely work with them again and recommend them to others",
     },
     {
-        avatar: AVATAR,
-        name: 'Nelson',
-        review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur suscipit atque rem culpa quas quae, incidunt aliquam voluptas repudiandae magnam expedita eum recusandae inventore commodi similique sed laudantium asperiores delectus? Quibusdam optio sint blanditiis iste reiciendis! Tempora, sit non.',
-    },
-    {
-        avatar: AVATAR,
-        name: 'Jackson',
-        review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur suscipit atque rem culpa quas quae, incidunt aliquam voluptas repudiandae magnam expedita eum recusandae inventore commodi similique sed laudantium asperiores delectus? Quibusdam optio sint blanditiis iste reiciendis! Tempora, sit non.',
-    },
-    {
-        avatar: AVATAR,
-        name: 'Ramma',
-        review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur suscipit atque rem culpa quas quae, incidunt aliquam voluptas repudiandae magnam expedita eum recusandae inventore commodi similique sed laudantium asperiores delectus? Quibusdam optio sint blanditiis iste reiciendis! Tempora, sit non.',
+        avatar: rm,
+        name: 'Rammathan Nkuutu',
+        review: 'Working with Ian was a great experience. he demonstrated a high degree of creativity and innovation on a project that required it. his passion for software development is evident in the enthusiasm and positive attitude he bring to each project. Ian is an excellent problem-solver and collaborator, always willing to share his knowledge and expertise to help make the project a success. I highly recommend Ian for any software development project',
     },
 ];
 
