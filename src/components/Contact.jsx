@@ -46,7 +46,7 @@ const Contact = () => {
                     </article>
                 </div>
 
-                {/* form */}
+                <Form />
             </div>
         </section>
     );
@@ -61,10 +61,10 @@ const Form = () => {
 
         emailjs
             .sendForm(
-                'YOUR_SERVICE_ID',
-                'YOUR_TEMPLATE_ID',
+                'service_dxdqsgs',
+                'template_e684n8r',
                 form.current,
-                'YOUR_PUBLIC_KEY'
+                'Dv4ZLAmKkTzarU4fK'
             )
             .then(
                 (result) => {
