@@ -3,6 +3,8 @@ import '@css/contact.css';
 import { BsWhatsapp } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contact = () => {
     return (
@@ -44,32 +46,55 @@ const Contact = () => {
                     </article>
                 </div>
 
-                <form>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Full Name"
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        rows={7}
-                        placeholder="Your Message"
-                        required
-                    />
-
-                    <button type="submit" className="btn btn-primary">
-                        SEND MESSAGE
-                    </button>
-                </form>
+                {/* form */}
             </div>
         </section>
     );
 };
 export default Contact;
+
+const Form = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'YOUR_SERVICE_ID',
+                'YOUR_TEMPLATE_ID',
+                form.current,
+                'YOUR_PUBLIC_KEY'
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
+
+    return (
+        <form ref={form} onSubmit={sendEmail}>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Full Name"
+                required
+            />
+            <input type="text" name="email" placeholder="Your Email" required />
+            <textarea
+                name="message"
+                rows={7}
+                placeholder="Your Message"
+                required
+            />
+
+            <button type="submit" className="btn btn-primary">
+                SEND MESSAGE
+            </button>
+        </form>
+    );
+};
