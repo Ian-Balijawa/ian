@@ -15,18 +15,18 @@ body {
 }
 
 :root {
-	
+
 	--color-bg: #1f1f38;
 	--color-bg-variant: #2c2c6c;
 	--color-bg-primary: #4db5ff --color-primary-variant:rgba(77, 181, 255, 0.4);
 	--color-white: #ffff;
 	--color-ligt: rgba(255, 255, 255, 0.6);
 	--color-primary:#56BBF3;
-	--transition: all 400ms ease; 
+	--transition: all 400ms ease;
 
-	--container-width-lg: 70%;
-	--container-width-md: 86%;
-	--container-width-sm: 90%;
+	--container-width-lg: 80%;
+	--container-width-md: 90%;
+	--container-width-sm: 95%;
 }
 
 html {
@@ -102,7 +102,7 @@ a:hover {
 	display: inline-block;
 	color: var(--color-white);
 	padding: .8rem 2rem;
-	border-radius: 0.4rem;
+	border-radius: 5px;
 	border: 1px solid var(--color-primary);
 	transition: var(--transition);
 }

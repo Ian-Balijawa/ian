@@ -7,6 +7,9 @@ import mysite from '/images/mysite.png';
 import tinylabz from '/images/tinylabz.png';
 import silverlight from '/images/silverlight.png';
 import cefs from '/images/cefs.png';
+import jlib from '/images/jlib.png';
+import gol from '/images/gol.png';
+import dijkstra from '/images/dijkstra.png';
 
 interface IData {
     img: string;
@@ -55,6 +58,24 @@ const data: IData[] = [
     {
         img: dissertation,
         description: 'Under Graduate Dissertation (Mobile App)',
+        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
+        github: 'https://github.com/qpey/backend.git',
+    },
+    {
+        img: jlib,
+        description: 'JLib | Job Search Platform',
+        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
+        github: 'https://github.com/qpey/backend.git',
+    },
+    {
+        img: gol,
+        description: "John Conway's Game of Life",
+        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
+        github: 'https://github.com/qpey/backend.git',
+    },
+    {
+        img: dijkstra,
+        description: "Dijkstra's Path Finding Visualisation",
         href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
         github: 'https://github.com/qpey/backend.git',
     },
