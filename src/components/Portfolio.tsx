@@ -64,20 +64,20 @@ const data: IData[] = [
     {
         img: jlib,
         description: 'JLib | Job Search Platform',
-        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
-        github: 'https://github.com/qpey/backend.git',
+        href: 'https://joblib.vercel.app/',
+        github: 'https://github.com/Ian-Balijawa/j-lib.git',
     },
     {
         img: gol,
         description: "John Conway's Game of Life",
-        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
-        github: 'https://github.com/qpey/backend.git',
+        href: 'https://gol-game.vercel.app/',
+        github: 'https://github.com/Ian-Balijawa/game-of-life.git',
     },
     {
         img: dijkstra,
         description: "Dijkstra's Path Finding Visualisation",
-        href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
-        github: 'https://github.com/qpey/backend.git',
+        href: 'https://dijkstras.vercel.app',
+        github: 'https://github.com/Ian-Balijawa/dijkstra.git',
     },
 ];
 
