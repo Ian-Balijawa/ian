@@ -66,6 +66,11 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    font-size: small;
+    text-align: left;
+    border: 1px solid #2c2c6c;
+    padding: 1em;
+    border-radius: 5px;
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */

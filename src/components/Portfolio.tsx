@@ -1,83 +1,97 @@
 import '@css/portfolio.css';
 
-import delv from '/images/delv.png';
-import theme from '/images/theme.png';
-import dissertation from '/images/dissertation.png';
-import mysite from '/images/mysite.png';
-import tinylabz from '/images/tinylabz.png';
-import silverlight from '/images/silverlight.png';
-import cefs from '/images/cefs.png';
-import jlib from '/images/jlib.png';
-import gol from '/images/gol.png';
-import dijkstra from '/images/dijkstra.png';
+import git from '@assets/icons/git.png';
+import { FC } from 'react';
 
 interface IData {
     img: string;
-    description: string;
+    about: string;
+    name: string;
     href: string;
     github: string;
+    tags: string[];
 }
 
 const data: IData[] = [
     {
-        img: tinylabz,
-        description: 'Company Website',
+        img: '/images/tinylabz.png',
+        about: 'The Company Website for Building Software for Clients showcases the services of a software development company. It features a portfolio of past projects, team members, and a contact page for potential clients to request quotes and consultations!',
+        name: 'Company Website',
         href: 'https://tinylabz.vercel.app',
         github: 'https://github.com/tinylabz/web.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: mysite,
-        description: 'Personal Portfolio',
+        img: '/images/mysite.png',
+        about: "A Personal Portfolio Website showcases an individual's professional achievements and skillset. It typically includes a biography, resume, portfolio of past projects, and contact information. The purpose is to showcase the individual's work and attract potential clients or employers!",
+        name: 'Personal Portfolio',
         href: 'https://iyn.vercel.app',
         github: 'https://github.com/Ian-Balijawa/my-site.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: delv,
-        description: 'Delv Careers',
+        img: '/images/delv.png',
+        about: 'Delv Careers Platform is a web-based job board that connects job seekers with employers. It provides features such as job searching, resume creation, application tracking, and job alerts. The platform aims to simplify the job search process for candidates while providing employers with a pool of qualified candidates!',
+        name: 'Delv Careers',
         href: 'https://delvcareers.com',
         github: '#',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: cefs,
-        description: 'Complaint Evaluation Feedback System',
+        img: '/images/cefs.png',
+        about: 'The Complaint Evaluation Feedback System is a web application designed to help students learn about managing customer complaints more effectively. The system allows students to submit complaints online, which are then evaluated and assigned to the appropriate team members for resolution.  Students can track the progress of their complaints and provide feedback on the resolution process!',
+        name: 'Complaint Evaluation System',
         href: 'https://cefs.vercel.app',
         github: 'https://github.com/tinylabz/cefs.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: theme,
-        description: 'Dark Night Rises Vscode Extension(Theme)',
+        img: '/images/theme.png',
+        about: 'The Dark Night Rises VS Code Theme Extension is a custom visual theme for Microsoft Visual Studio Code. Its dark color scheme with shades of blue and purple is designed to reduce eye strain and enhance code readability. Suitable for programming in various languages, the theme provides a modern and sleek appearance for the code editor!',
+        name: 'Dark Night Rises Extension',
         href: 'https://marketplace.visualstudio.com/items?itemName=ianbalijawa.dark-night-rises',
         github: 'https://github.com/Ian-Balijawa/dark-night-rises.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: silverlight,
-        description: 'Silver Light Vscode Extension(Theme)',
+        img: '/images/silverlight.png',
+        about: 'The Silver Light VS Code Theme Extension is a light-colored custom visual theme for Microsoft Visual Studio Code. Its silver, gray, and blue color scheme provides a clean and elegant appearance, ideal for programming in various languages. The theme improves code readability and offers a visually pleasing interface, while reducing eye strain!',
+        name: 'Silver Light Extension',
         href: 'https://marketplace.visualstudio.com/items?itemName=ianbalijawa.silver-light',
         github: 'https://github.com/Ian-Balijawa/silverlight.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: dissertation,
-        description: 'Under Graduate Dissertation (Mobile App)',
+        img: '/images/dissertation.png',
+        about: 'Developing strategies and tools to protect QR code payment systems from phishing attacks, which are attempts by malicious actors to obtain sensitive information from users. This project involved researching existing security measures, identifying vulnerabilities, and proposing new methods to enhance security and prevent attacks.',
+        name: 'Under Graduate Dissertation',
         href: 'http://dissertations.mak.ac.ug/handle/20.500.12281/14935',
         github: 'https://github.com/qpey/backend.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: jlib,
-        description: 'JLib | Job Search Platform',
+        img: '/images/jlib.png',
+        about: 'JLib is a job search platform that connects job seekers with their dream jobs. With its user-friendly interface and advanced search features, JLib helps job seekers find relevant job openings and apply for them easily. Employers can also post job listings and search for qualified candidates on the platform!',
+        name: 'JLib | Job Search Platform',
         href: 'https://joblib.vercel.app/',
         github: 'https://github.com/Ian-Balijawa/j-lib.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: gol,
-        description: "John Conway's Game of Life",
+        img: '/images/gol.png',
+        about: "John Conway's Game of Life is a cellular automaton simulation that showcases how simple rules can result in complex patterns. The game consists of a grid of cells that can either be alive or dead. The cells evolve over time based on their neighboring cells, creating intricate patterns and behaviors. Project implementation is in Javascript!",
+        name: "John Conway's Game of Life",
         href: 'https://gol-game.vercel.app/',
         github: 'https://github.com/Ian-Balijawa/game-of-life.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
     {
-        img: dijkstra,
-        description: "Dijkstra's Path Finding Visualisation",
+        img: '/images/dijkstra.png',
+        about: "Dijkstra's Path Finding Visualization is a project that demonstrates Dijkstra's algorithm, a popular pathfinding algorithm. The program allows users to input a start and end point on a grid and visualizes the algorithm finding the shortest path between them. The visualization displays the algorithm's progress in real-time, showing the explored nodes and the path found",
+        name: "Dijkstra's Path Finding Visualisation",
         href: 'https://dijkstras.vercel.app',
         github: 'https://github.com/Ian-Balijawa/dijkstra.git',
+        tags: ['/react.png', '/typescript.png', '/node.png'],
     },
 ];
 
@@ -88,34 +102,49 @@ const Portfolio = () => {
             <h2>Portfolio</h2>
 
             <div className="container portfolio__container">
-                {data.map(({ img, href, description, github }, index) => (
-                    <article className="portfolio__item" key={index}>
-                        <div className="portfolio__item-image">
-                            <img src={img} alt="port-img" />
-                        </div>
-                        <div className="portfolio__item-image">
-                            <h3>{description}</h3>
-                            <div className="portfolio__item-cta">
-                                <a
-                                    href={github}
-                                    target={'_blank'}
-                                    className="btn"
-                                >
-                                    Github
-                                </a>
-                                <a
-                                    href={href}
-                                    className="btn btn-primary"
-                                    target={'_blank'}
-                                >
-                                    Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                {data.map(({ img, href, name, github, about, tags }, index) => (
+                    <Card
+                        about={about}
+                        href={href}
+                        img={img}
+                        name={name}
+                        github={github}
+                        tags={tags}
+                    />
                 ))}
             </div>
         </section>
     );
 };
 export default Portfolio;
+
+const Card: FC<IData> = ({ about, name, github, href, img, tags }) => {
+    return (
+        <article className="portfolio__item">
+            <div className="portfolio__item-image">
+                <img src={img} alt="port-img" />
+            </div>
+            <div className="portfolio__item-image">
+                <h3>{name}</h3>
+                <div className="tag">
+                    {tags.map((tag) => (
+                        <img key={tag.toString()} src={tag} alt="react-logo" />
+                    ))}
+                </div>
+                <p>{about}</p>
+                <div className="portfolio__item-cta">
+                    <a href={github} target={'_blank'} className="btn">
+                        Github
+                    </a>
+                    <a
+                        href={href}
+                        className="btn btn-primary"
+                        target={'_blank'}
+                    >
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+        </article>
+    );
+};

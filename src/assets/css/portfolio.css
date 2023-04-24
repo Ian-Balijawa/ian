@@ -6,10 +6,11 @@
 
 .portfolio__item {
     background: var(--color-bg-variant);
-    padding: 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     border: 1px solid transparent;
     transition: var(--transition);
+    height: fit-content;
 }
 
 .portfolio__item:hover {
@@ -23,13 +24,44 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 0.5rem 0 1rem;
+    font-size: larger;
+}
+.portfolio__item p {
+    margin: 0.5rem 0 1rem;
+    font-size: small;
+    letter-spacing: 0.3px;
+}
+.tag {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 0.3em;
+}
+
+.git_icon img {
+    width: 10%;
+    object-fit: cover;
+    border: 1px solid #0c67c3;
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+}
+.tag img {
+    width: 10%;
+    object-fit: cover;
+    /* border: 1px solid #0c67c3; */
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
 }
 
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+.portfolio__item-cta a {
+    padding: 0.3em 1rem;
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */

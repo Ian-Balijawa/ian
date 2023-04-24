@@ -37,10 +37,10 @@
     padding: 0.5rem 1rem;
     border-radius: 0.4em;
 
-    border: 1px solid #56bbf3;
+    border: 1px solid #0c67c3;
 }
 .contact__option a:hover {
-    background: #56bbf3;
+    background: #0c67c3;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
