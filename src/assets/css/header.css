@@ -50,7 +50,6 @@ h2 {
 }
 h3 {
     font-size: 1rem;
-    /* width: 50%; */
     margin-top: 3rem;
 }
 .social-container {
@@ -103,6 +102,7 @@ h5 {
     }
     h3 {
         width: 100%;
+        margin-top: 2rem;
     }
     h2 {
         font-size: 2.3rem;
@@ -110,6 +110,7 @@ h5 {
 
     h3 {
         font-size: 0.9rem;
+        color: #7b86a4;
     }
 
     .header {
@@ -124,6 +125,9 @@ h5 {
 /* =============================== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
 @media screen and (max-width: 600px) {
+    .header__container {
+        padding: 0;
+    }
     .header {
         height: 100vh;
     }
