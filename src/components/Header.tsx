@@ -2,26 +2,34 @@ import '@css/header.css';
 
 import CTA from '@/components/CTA';
 import Social from '@/components/Socials';
-import me from '@assets/me.png';
 
 const Header = () => {
     return (
-        <header>
-            <div className="container header__container">
-                <h5>Hello I'm</h5>
-                <h1>Ian Balijawa</h1>
-                <h5 className="text-light">FullStack Developer</h5>
-                <CTA />
-                <Social />
-                <div className="me">
-                    <img src={me} alt="me" />
+        <>
+            <div className="header">
+                <div className="container header__container">
+                    <h5>Hi, my name is</h5>
+                    <h1>IAN BALIJAWA</h1>
+                    <h2>I build Web and Mobile Applications</h2>
+                    <h3>
+                        I’m a software engineer specializing in building (and
+                        occasionally designing) exceptional digital experiences.
+                        Currently, I’m focused on building accessible,
+                        human-centered products at TLABS.
+                    </h3>
+
+                    <CTA />
+                    <div className="social-container">
+                        <Social />
+                    </div>
                 </div>
+                <img src="/images/me.png" alt="me" />
             </div>
 
             <a href="#contact" className="scroll__down">
                 Scroll Down
             </a>
-        </header>
+        </>
     );
 };
 export default Header;

@@ -1,3 +1,4 @@
+import './index.css';
 import { Navigate, useRoutes } from 'react-router-dom';
 
 import Home from '@/Pages/Home';

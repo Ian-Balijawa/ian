@@ -15,12 +15,11 @@ body {
 }
 
 :root {
-
 	--color-bg: #1f1f38;
 	--color-bg-variant: #2C2C6C;
 	--color-bg-primary: #4db5ff --color-primary-variant:rgba(77, 181, 255, 0.4);
-	--color-white: #ffff;
-	--color-ligt: rgba(255, 255, 255, 0.6);
+	--color-white: #CCD6F6;
+	--color-light: rgba(255, 255, 255, 0.6);
 	--color-primary:#0C67C3;
 	--transition: all 400ms ease;
 
@@ -75,7 +74,7 @@ section {
 section>h2,
 section>h5 {
 	text-align: center;
-	color: var(--color-ligt);
+	color: var(--color-light);
 }
 
 section>h2 {
@@ -85,7 +84,7 @@ section>h2 {
 }
 
 .text-light {
-	color: var(--color-ligt)
+	color: var(--color-light)
 }
 
 a {
