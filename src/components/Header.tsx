@@ -23,7 +23,7 @@ const Header = () => {
                         <Social />
                     </div>
                 </div>
-                <img src="/images/me.png" alt="me" />
+                <img src="/images/me.svg" alt="me" />
             </div>
 
             <a href="#contact" className="scroll__down">
