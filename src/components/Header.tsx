@@ -23,13 +23,14 @@ const Header = () => {
                         <Social />
                     </div>
                 </div>
-                <img src="/images/me.svg" alt="me" />
+                <img src="/images/me.png" alt="me" />
             </div>
 
-            <a href="#contact" className="scroll__down">
-                Scroll Down
+            <a href="mailto:ianbalijawa16@gmail.com" className="scroll__down">
+                ianbalijawa16@gmail.com
             </a>
         </>
     );
 };
+
 export default Header;
