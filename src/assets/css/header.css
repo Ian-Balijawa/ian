@@ -1,149 +1,149 @@
 .header__container {
-    width: 95%;
-    padding: 5rem;
+  width: 95%;
+  padding: 5rem;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0.4rem;
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.4rem;
+  padding: 1rem;
 }
 
 .header > img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 5px;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        /* var(--color-primary), */ transparent
-    );
-    display: grid;
-    place-items: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    /* var(--color-primary), */ transparent
+  );
+  display: grid;
+  place-items: center;
 }
 
 .header > img {
-    border-radius: 5px;
-    overflow: hidden;
-    transform: rotate(-10deg);
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(-10deg);
 }
 .header > img:hover {
-    transform: rotate(0);
-    transition: var(--transition);
+  transform: rotate(0);
+  transition: var(--transition);
 }
 
 .cta {
-    margin-top: 2.5rem;
-    gap: 1.2rem;
+  margin-top: 2.5rem;
+  gap: 1.2rem;
 }
 
 h1 {
-    font-size: 4.5rem;
-    color: var(--color-primary);
+  font-size: 4.5rem;
+  color: var(--color-primary);
 }
 
 h2 {
-    font-size: 3rem;
-    line-height: 2.9rem;
+  font-size: 3rem;
+  line-height: 2.9rem;
 }
 h3 {
-    font-size: 1rem;
-    margin-top: 3rem;
+  font-size: 1rem;
+  margin-top: 3rem;
 }
 .social-container {
-    position: fixed;
-    left: 2%;
-    bottom: 30%;
+  position: fixed;
+  left: 2%;
+  bottom: 30%;
 }
 h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 50%;
 }
 
-.header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+.header__socials::after,
+.header__socials::before {
+  content: "";
+  width: 5px;
+  height: 5rem;
+  background: var(--color-primary);
 }
 
 .scroll__down {
-    width: max-content;
-    display: block;
-    z-index: 2;
-    position: fixed;
-    transform: rotate(90deg);
-    right: -5%;
-    bottom: 50%;
-    border: 1px solid var(--color-bg-variant);
-    padding: 0.2rem 1rem;
-    border-radius: 5px;
+  width: max-content;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  transform: rotate(90deg);
+  right: -5%;
+  bottom: 50%;
+  border: 1px solid var(--color-bg-variant);
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width: 1024px) {
-    .header {
-        height: 68vh;
-    }
+  .header {
+    height: 68vh;
+  }
 
-    .header__container {
-        padding: 2rem;
-    }
-    h1 {
-        font-size: 3.5rem;
-    }
-    h3 {
-        width: 100%;
-        margin-top: 2rem;
-    }
-    h2 {
-        font-size: 2.3rem;
-    }
+  .header__container {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
 
-    h3 {
-        font-size: 0.9rem;
-        color: #7b86a4;
-    }
+  h3 {
+    font-size: 0.9rem;
+    color: #7b86a4;
+  }
 
-    .header {
-        grid-template-columns: 1fr;
-    }
+  .header {
+    grid-template-columns: 1fr;
+  }
 
-    .header > img {
-        display: none;
-    }
+  .header > img {
+    display: none;
+  }
 }
 
 /* =============================== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
 @media screen and (max-width: 600px) {
-    .header__container {
-        padding: 0;
-    }
-    .header > img {
-        display: none;
-    }
-
-    .header__socials,
-    .scroll__down {
-        display: none;
-    }
+  .header__container {
+    padding: 0;
+  }
+  .header > img {
+    display: none;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width: 1024px) {
-    .scroll__down {
-        display: none;
-    }
+  .scroll__down {
+    display: none;
+  }
 }

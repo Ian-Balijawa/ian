@@ -1,56 +1,83 @@
 .project.container {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
-    height: max-content;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  height: max-content;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project.container > img {
-    width: 55%;
+  width: 55%;
+  border: 0.5rem solid var(--color-bg-variant);
+  border-radius: 10px;
+}
+.project.container > img:hover {
+  transition: all 0.3s ease-in-out;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .featured,
 .title {
-    align-self: flex-end;
-    font-weight: 700;
+  align-self: flex-end;
+  font-weight: 700;
 }
 .featured {
-    color: var(--color-primary);
-    font-size: larger;
+  color: var(--color-primary);
+  align-self: flex-start;
+  font-size: larger;
 }
 
 .title {
-    color: var(--color-white);
-    font-size: xx-large;
+  color: var(--color-white);
+  font-size: xx-large;
 }
 
 .description {
-    align-self: flex-end;
-    background: #2c2c6c;
-    border-radius: 5px;
-    padding: 1rem;
+  align-self: flex-end;
+  background: var(--color-bg-variant);
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .tags {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
+.tag {
+  background: var(--color-primary);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
 .icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
 .icons > img {
-    width: 8%;
+  width: 5%;
+}
+
+/* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1024px) {
+  .project.container {
+    flex-direction: column;
+  }
+}
+
+/* =============================== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width: 600px) {
+  .project.container {
+    flex-direction: column;
+  }
 }
