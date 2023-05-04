@@ -5,14 +5,12 @@
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
-  margin: 1rem auto;
   width: 80%;
 }
 
 .container.wrapper > p {
   font-size: 2em;
   align-self: center;
-  margin-top: 3rem;
 }
 
 .company {
@@ -37,9 +35,16 @@
   width: 100%;
 }
 
-.tab:hover {
-  border-left: 3px solid var(--color-primary);
+.active {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  width: 100%;
+  border-left: 1px solid var(--color-primary);
   background: var(--color-bg-variant);
+}
+
+.tab:hover {
+  border-left: 1px solid var(--color-primary);
 }
 .role {
   display: flex;
@@ -60,6 +65,55 @@
   height: 10px;
 }
 
-.details {
-  width: 70%;
+@media screen and (max-width: 600px) {
+  .company {
+    flex-direction: column;
+  }
+
+  .tabs {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid var(--color-bg-variant);
+    padding: 0.4em 0;
+    width: 100%;
+  }
+
+  .tab {
+    border: none;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .tab:hover {
+    border: none;
+  }
+
+  .active {
+    border: none;
+    padding: 0;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .tab {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .active {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 100%;
+    background: var(--color-bg-variant);
+  }
+
+  .tab:hover {
+    border-left: 1px solid var(--color-primary);
+  }
 }

@@ -1,7 +1,7 @@
 import "@css/companies.css";
 import { useEffect, useState } from "react";
 
-type Company = "Google" | "Facebook" | "Twitter";
+type Company = "TLABS" | "DevAnalyst" | "Ataano";
 
 interface IData {
   title: string;
@@ -10,8 +10,9 @@ interface IData {
 }
 
 export const Companies = () => {
-  const [companyList] = useState<Company[]>(["Facebook", "Google", "Twitter"]);
-  const [company, setCompany] = useState<Company>("Google");
+  const [companyList] = useState<Company[]>(["TLABS", "DevAnalyst", "Ataano"]);
+  const [_, setCompany] = useState<Company>("TLABS");
+  const [active, setActive] = useState<Company>("TLABS");
 
   const [data, setData] = useState<IData>({
     date: "",
@@ -20,15 +21,16 @@ export const Companies = () => {
   });
 
   useEffect(() => {
-    setCompany("Facebook");
+    setCompany("TLABS");
+    setActive("TLABS");
     setData({
-      date: "July - December 2017",
-      title: "UI Engineer Co-op @ Facebook",
+      date: "October - Present",
+      title: "Full Stack Engineer @ TLABS",
       desc: [
-        "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-        "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-        "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-        "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
+        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
       ],
     });
   }, []);
@@ -36,40 +38,43 @@ export const Companies = () => {
   const handleSelectedLocation = (location: Company) => {
     setCompany(location);
 
-    if (location == "Facebook") {
+    if (location == "Ataano") {
+      setActive("Ataano");
       setData({
-        date: "July - December 2017",
-        title: "UI Engineer Co-op @ Facebook",
+        date: "November - February 2022",
+        title: "Frontend Engineer @ Ataano",
         desc: [
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
+          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
+          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
+          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
+          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
         ],
       });
     }
 
-    if (location == "Google") {
+    if (location == "TLABS") {
+      setActive("TLABS");
       setData({
-        date: "July - December 2017",
-        title: "UI Engineer Co-op @ Google",
+        date: "October - Present",
+        title: "Full Stack Engineer @ TLABS",
         desc: [
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
+          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
         ],
       });
     }
-    if (location == "Twitter") {
+    if (location == "DevAnalyst") {
+      setActive("DevAnalyst");
       setData({
         date: "July - December 2017",
-        title: "UI Engineer Co-op @ Twitter",
+        title: "Frontend Engineer @ Ataano",
         desc: [
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
-          "Developed and styled interactive web applications for Apple Music using Ember and SCSS.",
+          "Developed and styled interactive web applications using Ember and SCSS.",
+          "Developed and styled interactive web applications using Ember and SCSS.",
+          "Developed and styled interactive web applications using Ember and SCSS.",
+          "Developed and styled interactive web applications using Ember and SCSS.",
         ],
       });
     }
@@ -81,12 +86,15 @@ export const Companies = () => {
       <div className="company">
         <div className="tabs">
           {companyList.map((c) => (
-            <div onClick={() => handleSelectedLocation(c)} className={"tab"}>
+            <div
+              onClick={() => handleSelectedLocation(c)}
+              className={c === active ? "active" : "tab"}
+            >
               {c}
             </div>
           ))}
         </div>
-        <div className="detail">
+        <div className="details">
           <div className="title">{data.title}</div>
           <div className="date">{data.date}</div>
           {data.desc.map((d, idx) => (
