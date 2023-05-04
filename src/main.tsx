@@ -1,6 +1,6 @@
 import "./index.css";
 
-import { StrictMode, Suspense, lazy } from "react";
+import { StrictMode } from "react";
 
 import Footer from "@/components/Footer";
 import { createRoot } from "react-dom/client";

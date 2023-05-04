@@ -1,0 +1,65 @@
+.container.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.container.wrapper > p {
+  font-size: 2em;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.company {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.tabs {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-left: 1px solid var(--color-bg-variant);
+}
+
+.tab {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tab:hover {
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-bg-variant);
+}
+.role {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.desc {
+  background: transparent;
+}
+
+.icon {
+  background: var(--color-primary);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.details {
+  width: 70%;
+}

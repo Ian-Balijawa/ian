@@ -1,6 +1,7 @@
 //@ts-nocheck
 import { FC } from "react";
 import "@css/project.css";
+import { useScreenWidth } from "@/hooks/useScreen";
 
 export interface ProjectProps {
   title: string;
@@ -19,15 +20,21 @@ export const Project: FC<ProjectProps> = ({
   title,
   img,
 }) => {
+  const size = useScreenWidth();
+
   return (
     <div
       style={{
-        flexDirection: dir,
+        flexDirection: size === "small" ? "column" : dir,
         margin: "5rem auto",
       }}
       className="container project"
     >
-      <img src={img} alt="project" />
+      <img
+        src={img}
+        alt="project"
+        style={{ width: size === "small" && "100%" }}
+      />
       <div className="info">
         <p className="featured">Featured project</p>
         <p className="title">{title}</p>

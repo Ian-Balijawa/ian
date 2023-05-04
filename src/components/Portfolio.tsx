@@ -69,7 +69,7 @@ const data: IData[] = [
   {
     img: "/images/gol.png",
     about:
-      "John Conway's Game of Life is a cellular automaton simulation that showcases how simple rules can result in complex patterns. The game consists of a grid of cells that can either be alive or dead. The cells evolve over time based on their neighboring cells, creating intricate patterns and behaviors. Project implementation is in Javascript!",
+      "Cellular automaton simulation that showcases how simple rules can result in complex patterns. The game consists of a grid of cells that can either be alive or dead. The cells evolve over time based on their neighboring cells, creating intricate patterns and behaviors",
     name: "John Conway's Game of Life",
     href: "https://gol-game.vercel.app/",
     github: "https://github.com/Ian-Balijawa/game-of-life.git",
@@ -78,7 +78,7 @@ const data: IData[] = [
   {
     img: "/images/dijkstra.png",
     about:
-      "Dijkstra's Path Finding Visualization is a project that demonstrates Dijkstra's algorithm, a popular pathfinding algorithm. The program allows users to input a start and end point on a grid and visualizes the algorithm finding the shortest path between them. The visualization displays the algorithm's progress in real-time, showing the explored nodes and the path found",
+      "Demonstration of Dijkstra's  pathfinding algorithm. The program allows users to input a start and end point on a grid and visualizes the algorithm finding the shortest path between them and visualises the algorithm's progress in real-time, showing the explored nodes and the path found",
     name: "Dijkstra's Path Finding Visualisation",
     href: "https://dijkstras.vercel.app",
     github: "https://github.com/Ian-Balijawa/dijkstra.git",

@@ -11,26 +11,23 @@
 }
 
 .header > img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 5px;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    /* var(--color-primary), */ transparent
-  );
-  display: grid;
-  place-items: center;
-}
-
-.header > img {
   border-radius: 5px;
   overflow: hidden;
   transform: rotate(-10deg);
 }
+
 .header > img:hover {
   transform: rotate(0);
   transition: var(--transition);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .cta {

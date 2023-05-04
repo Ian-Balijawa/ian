@@ -1,83 +1,77 @@
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    height: fit-content;
+  background: var(--color-bg-variant);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  height: fit-content;
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  border-color: var(--color-primary);
+  background: transparent;
+  border-radius: 10px;
 }
 
 .portfolio__item-image {
-    border-radius: 5px;
-    overflow: hidden;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .portfolio__item h3 {
-    margin: 0.5rem 0 1rem;
-    font-size: larger;
+  margin: 0.5rem 0 1rem;
+  font-size: larger;
 }
 .portfolio__item p {
-    margin: 0.5rem 0 1rem;
-    font-size: small;
-    letter-spacing: 0.3px;
+  margin: 0.5rem 0 1rem;
+  font-size: small;
+  letter-spacing: 0.3px;
 }
 .tag {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    gap: 0.3em;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 0.3em;
+  background: transparent;
 }
 
-.git_icon img {
-    width: 10%;
-    object-fit: cover;
-    border: 1px solid #0c67c3;
-    padding: 0.1em 0.3em;
-    border-radius: 5px;
-}
 .tag img {
-    width: 10%;
-    object-fit: cover;
-    /* border: 1px solid #0c67c3; */
-    padding: 0.1em 0.3em;
-    border-radius: 5px;
+  width: 10%;
+  object-fit: cover;
+  padding: 0.1em 0.3em;
+  border-radius: 5px;
 }
 
 .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-content: flex-end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 .portfolio__item-cta a {
-    padding: 0.3em 1rem;
+  padding: 0.3em 1rem;
 }
 
 /* =============================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 }
 
 /* =============================== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
