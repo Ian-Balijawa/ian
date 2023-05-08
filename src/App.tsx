@@ -56,16 +56,6 @@ export default () => {
     <>
       <Hero />
       <Navbar />
-      <h1
-        style={{
-          fontSize: "2.3rem",
-          textAlign: "center",
-          color: "var(--color-white)",
-          fontWeight: "700",
-        }}
-      >
-        Some Things I’ve Built
-      </h1>
       {projects.map(({ img, description, dir, imgs, tags, title }, idx) => {
         return (
           <Project

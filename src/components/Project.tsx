@@ -26,7 +26,7 @@ export const Project: FC<ProjectProps> = ({
     <div
       style={{
         flexDirection: size === "small" ? "column" : dir,
-        margin: "5rem auto",
+        // margin: "5rem auto",
       }}
       className="container project"
     >
