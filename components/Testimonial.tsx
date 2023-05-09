@@ -44,8 +44,8 @@ export const Testimonial = () => {
         navigation
         pagination={{ clickable: true }}
       >
-        {testimonials.map(({ avatar, name, text }, index) => (
-          <SwiperSlide className="testimonial" key={index}>
+        {testimonials.map(({ avatar, name, text }) => (
+          <SwiperSlide className="testimonial" key={name}>
             <Review key={name} name={name} avatar={avatar} text={text} />
           </SwiperSlide>
         ))}

@@ -49,7 +49,7 @@ export const Project: FC<ProjectProps> = ({
         </div>
         <div className="icons">
           {imgs.map((img) => (
-            <img alt="icon" src={img} />
+            <img key={img} alt="icon" src={img} />
           ))}
         </div>
       </div>

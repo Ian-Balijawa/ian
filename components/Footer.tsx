@@ -93,8 +93,8 @@ export const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        {socials.map(({ href, icon, name }, index) => {
-          return <a href={href}>{icon}</a>;
+        {socials.map(({ href, icon, name }) => {
+          return <a key={name} href={href}>{icon}</a>;
         })}
       </div>
 

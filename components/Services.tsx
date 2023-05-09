@@ -56,17 +56,17 @@ export const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
-        {data.map(({ name, srvs }, index) => {
+        {data.map(({ name, srvs }) => {
           return (
-            <article className="service" key={index.toString()}>
+            <article className="service" key={name.toString()}>
               <div className="service__head">
                 <h3>{name}</h3>
               </div>
 
               <ul className="service__list">
-                {srvs.map((srv, index) => {
+                {srvs.map((srv) => {
                   return (
-                    <li key={index.toString()}>
+                    <li key={srv.toString()}>
                       <BiCheck className="service__list-icon" />
                       <p>{srv}</p>
                     </li>
