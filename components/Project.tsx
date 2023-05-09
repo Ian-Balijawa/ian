@@ -1,7 +1,9 @@
 //@ts-nocheck
+"use client";
+
 import { FC } from "react";
-import "@css/project.css";
-import { useScreenWidth } from "@/hooks/useScreen";
+import "@/css/project.css";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
 
 export interface ProjectProps {
   title: string;

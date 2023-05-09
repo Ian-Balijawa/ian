@@ -1,5 +1,6 @@
 //@ts-nocheck
-import "@css/contact.css";
+"use client";
+import "@/css/contact.css";
 
 import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";

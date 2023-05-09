@@ -1,15 +1,15 @@
 import { Project, ProjectProps } from "@/components/Project";
-import About from "@components/About";
-import Contact from "@components/Contact";
-import Experience from "@components/Experience";
-import Navbar from "@components/Navbar";
-import Portfolio from "@components/Portfolio";
-import Services from "@components/Services";
-import Testimonial from "@components/Testimonial";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Navbar from "@/components/Navbar";
+import Portfolio from "@/components/Portfolio";
+import Services from "@/components/Services";
+import Testimonial from "@/components/Testimonial";
 import { Suspense, lazy } from "react";
-import { Loader } from "@components/Loader";
-import { Companies } from "./components/Companies";
-import Hero from "./components/Hero";
+import { Loader } from "@/components/Loader";
+import { Companies } from "@/components/Companies";
+import Hero from "@/components/Hero";
 
 const Loadable = (Component: React.FC) => () => {
   return (
@@ -18,8 +18,6 @@ const Loadable = (Component: React.FC) => () => {
     </Suspense>
   );
 };
-
-// const Hero = Loadable(lazy(() => import("@components/Hero")));
 
 const projects: ProjectProps[] = [
   {
@@ -51,7 +49,7 @@ const projects: ProjectProps[] = [
   },
 ];
 
-export default () => {
+export default function Index() {
   return (
     <>
       <Hero />
@@ -78,4 +76,4 @@ export default () => {
       <Contact />
     </>
   );
-};
+}

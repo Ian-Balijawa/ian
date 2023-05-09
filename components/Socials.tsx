@@ -2,7 +2,7 @@ import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { IoLogoTwitter } from 'react-icons/io';
 
-const Socials = () => {
+export const Socials = () => {
     return (
         <div className="header__socials">
             <a
@@ -20,4 +20,3 @@ const Socials = () => {
         </div>
     );
 };
-export default Socials;

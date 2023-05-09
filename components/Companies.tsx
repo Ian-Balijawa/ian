@@ -1,7 +1,8 @@
-import "@css/companies.css";
+"use client";
+import "@/css/companies.css";
 import { useEffect, useState } from "react";
 
-type Company = "TLABS" | "DevAnalyst" | "Ataano";
+type Company = "TLABS" | "DEVANALYST" | "ATAANO";
 
 interface IData {
   title: string;
@@ -10,7 +11,7 @@ interface IData {
 }
 
 export const Companies = () => {
-  const [companyList] = useState<Company[]>(["TLABS", "DevAnalyst", "Ataano"]);
+  const [companyList] = useState<Company[]>(["TLABS", "DEVANALYST", "ATAANO"]);
   const [_, setCompany] = useState<Company>("TLABS");
   const [active, setActive] = useState<Company>("TLABS");
 
@@ -38,16 +39,16 @@ export const Companies = () => {
   const handleSelectedLocation = (location: Company) => {
     setCompany(location);
 
-    if (location == "Ataano") {
-      setActive("Ataano");
+    if (location == "ATAANO") {
+      setActive("ATAANO");
       setData({
         date: "November - February 2022",
-        title: "Frontend Engineer @ Ataano",
+        title: "Frontend Engineer @ ATAANO",
         desc: [
-          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
-          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
-          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
-          "Developed and styled interactive web applications for Ataano using Ember and SCSS.",
+          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
+          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
+          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
+          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
         ],
       });
     }
@@ -65,11 +66,11 @@ export const Companies = () => {
         ],
       });
     }
-    if (location == "DevAnalyst") {
-      setActive("DevAnalyst");
+    if (location == "DEVANALYST") {
+      setActive("DEVANALYST");
       setData({
         date: "July - December 2017",
-        title: "Frontend Engineer @ Ataano",
+        title: "Frontend Engineer @ ATAANO",
         desc: [
           "Developed and styled interactive web applications using Ember and SCSS.",
           "Developed and styled interactive web applications using Ember and SCSS.",

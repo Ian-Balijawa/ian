@@ -1,7 +1,7 @@
-import "@css/header.css";
+import "@/css/header.css";
 
-import CTA from "@/components/CTA";
-import Social from "@/components/Socials";
+import { CTA } from "@/components/CTA";
+import { Socials } from "@/components/Socials";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
 
           <CTA />
           <div className="social-container">
-            <Social />
+            <Socials />
           </div>
         </div>
 

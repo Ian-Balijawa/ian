@@ -1,4 +1,4 @@
-import "@css/portfolio.css";
+import "@/css/portfolio.css";
 
 import { FC } from "react";
 
