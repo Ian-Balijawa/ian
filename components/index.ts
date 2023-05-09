@@ -1,1 +1,14 @@
-export {};
+export { About } from "./About";
+export { CTA } from "./CTA";
+export { Companies } from "./Companies";
+export { Contact } from "./Contact";
+export { Experience } from "./Experience";
+export { Footer } from "./Footer";
+export { Hero } from "./Hero";
+export { Loader } from "./Loader";
+export { Navbar } from "./Navbar";
+export { Portfolio } from "./Portfolio";
+export { Project, type ProjectProps } from "./Project";
+export { Services } from "./Services";
+export { Socials } from "./Socials";
+export { Testimonial } from "./Testimonial";

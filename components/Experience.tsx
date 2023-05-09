@@ -23,7 +23,7 @@ const frontend = [
   "React",
 ];
 
-const Experience = () => {
+export const Experience = () => {
   return (
     <section id="experience">
       <h2>My Experience</h2>
@@ -62,4 +62,3 @@ const Experience = () => {
     </section>
   );
 };
-export default Experience;

@@ -8,7 +8,7 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { useState } from "react";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
@@ -50,4 +50,3 @@ const Navbar = () => {
     </nav>
   );
 };
-export default Navbar;

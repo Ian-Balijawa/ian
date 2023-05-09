@@ -8,7 +8,7 @@ import { RiMessengerLine } from "react-icons/ri";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -50,7 +50,6 @@ const Contact = () => {
     </section>
   );
 };
-export default Contact;
 
 const Form = () => {
   const form = useRef();

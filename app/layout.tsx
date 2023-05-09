@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
 import "./globals.css";
+import { Footer } from "@/components";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });

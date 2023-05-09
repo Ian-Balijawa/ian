@@ -86,7 +86,7 @@ const data: IData[] = [
   },
 ];
 
-const Portfolio = () => {
+export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
@@ -108,7 +108,6 @@ const Portfolio = () => {
     </section>
   );
 };
-export default Portfolio;
 
 const Card: FC<IData> = ({ about, name, github, href, img, tags }) => {
   return (

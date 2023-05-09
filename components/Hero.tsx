@@ -1,10 +1,8 @@
 import "@/css/header.css";
 
-import { CTA } from "@/components/CTA";
-import { Socials } from "@/components/Socials";
-import Image from "next/image";
+import { CTA, Socials } from "@/components";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <>
       <div className="header">
@@ -32,5 +30,3 @@ const Hero = () => {
     </>
   );
 };
-
-export default Hero;

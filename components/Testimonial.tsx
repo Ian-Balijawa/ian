@@ -32,7 +32,7 @@ const testimonials: ITestimonial[] = [
   },
 ];
 
-const Testimonial = () => {
+export const Testimonial = () => {
   return (
     <section id="testimonial">
       <h5>Review from Clients</h5>
@@ -71,5 +71,3 @@ const Review: FC<ReviewProps> = ({ avatar, name, text }) => {
     </>
   );
 };
-
-export default Testimonial;

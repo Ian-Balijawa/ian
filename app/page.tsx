@@ -1,23 +1,16 @@
-import { Project, ProjectProps } from "@/components/Project";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
-import Navbar from "@/components/Navbar";
-import Portfolio from "@/components/Portfolio";
-import Services from "@/components/Services";
-import Testimonial from "@/components/Testimonial";
-import { Suspense, lazy } from "react";
-import { Loader } from "@/components/Loader";
-import { Companies } from "@/components/Companies";
-import Hero from "@/components/Hero";
-
-const Loadable = (Component: React.FC) => () => {
-  return (
-    <Suspense fallback={<Loader />}>
-      <Component />
-    </Suspense>
-  );
-};
+import {
+  Project,
+  ProjectProps,
+  About,
+  Companies,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Portfolio,
+  Services,
+  Testimonial,
+} from "@/components";
 
 const projects: ProjectProps[] = [
   {

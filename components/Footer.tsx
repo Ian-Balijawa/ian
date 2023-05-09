@@ -75,7 +75,7 @@ const links: ILinks[] = [
   },
 ];
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
@@ -104,4 +104,3 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;

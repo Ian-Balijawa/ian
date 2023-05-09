@@ -50,7 +50,7 @@ const data: ISrv[] = [
   },
 ];
 
-const Services = () => {
+export const Services = () => {
   return (
     <section id="services">
       <h2>Services</h2>
@@ -80,4 +80,3 @@ const Services = () => {
     </section>
   );
 };
-export default Services;
