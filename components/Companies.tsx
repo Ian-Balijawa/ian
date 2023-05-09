@@ -88,6 +88,7 @@ export const Companies = () => {
         <div className="tabs">
           {companyList.map((c) => (
             <div
+              key={c.toString()}
               onClick={() => handleSelectedLocation(c)}
               className={c === active ? "active" : "tab"}
             >
