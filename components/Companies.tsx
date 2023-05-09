@@ -83,7 +83,7 @@ export const Companies = () => {
 
   return (
     <div className="container wrapper">
-      <p>Where I've Worked</p>
+      <p>{"Where I've Worked"}</p>
       <div className="company">
         <div className="tabs">
           {companyList.map((c) => (

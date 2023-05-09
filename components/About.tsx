@@ -38,19 +38,15 @@ export const About = () => {
             </article>
           </div>
           <p>
-            I'm a Full Stack Software Engineer with a passion for building web
-            applications and software products that solve real-world problems. I
-            have experience working with a variety of programming languages and
-            technologies.
+            {
+              "I'm a Full Stack Software Engineer with a passion for building web applications and software products that solve real-world problems. I have experience working with a variety of programming languages and technologies."
+            }
           </p>
 
           <p>
-            I'm constantly seeking new challenges and opportunities to grow my
-            skills and knowledge, and I love collaborating with other developers
-            and designers to create innovative solutions. Whether it's
-            developing a new feature, optimizing performance, or fixing bugs,
-            I'm committed to delivering high-quality code that meets the needs
-            of users and stakeholders.
+            {
+              "I'm constantly seeking new challenges and opportunities to grow my skills and knowledge, and I love collaborating with other developers and designers to create innovative solutions. Whether it's developing a new feature, optimizing performance, or fixing bugs, I'm committed to delivering high-quality code that meets the needs of users and stakeholders."
+            }
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
