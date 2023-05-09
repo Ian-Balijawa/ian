@@ -2,6 +2,7 @@ import "@/css/header.css";
 
 import { CTA } from "@/components/CTA";
 import { Socials } from "@/components/Socials";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -22,7 +23,6 @@ const Hero = () => {
             <Socials />
           </div>
         </div>
-
         <img src="/images/me.png" alt="me" />
       </div>
 

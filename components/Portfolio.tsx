@@ -93,8 +93,9 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ img, href, name, github, about, tags }, index) => (
+        {data.map(({ img, href, name, github, about, tags }, idx) => (
           <Card
+            key={idx}
             about={about}
             href={href}
             img={img}
@@ -117,9 +118,9 @@ const Card: FC<IData> = ({ about, name, github, href, img, tags }) => {
       </div>
       <div className="portfolio__item-image">
         <h3>{name}</h3>
-        <div className="tag">
+        <div className="tags">
           {tags.map((tag) => (
-            <img key={tag.toString()} src={tag} alt="react-logo" />
+            <img key={tag.toString()} src={tag} alt={tag} />
           ))}
         </div>
         <p>{about}</p>

@@ -33,7 +33,7 @@
   font-size: small;
   letter-spacing: 0.3px;
 }
-.tag {
+.tags {
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -41,7 +41,7 @@
   background: transparent;
 }
 
-.tag img {
+.tags img {
   width: 10%;
   object-fit: cover;
   padding: 0.1em 0.3em;

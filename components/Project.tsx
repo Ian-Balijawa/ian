@@ -28,13 +28,12 @@ export const Project: FC<ProjectProps> = ({
     <div
       style={{
         flexDirection: size === "small" ? "column" : dir,
-        // margin: "5rem auto",
       }}
       className="container project"
     >
       <img
         src={img}
-        alt="project"
+        alt={title}
         style={{ width: size === "small" && "100%" }}
       />
       <div className="info">
@@ -50,7 +49,7 @@ export const Project: FC<ProjectProps> = ({
         </div>
         <div className="icons">
           {imgs.map((img) => (
-            <img key={img} src={img} alt="typescript" />
+            <img alt="icon" src={img} />
           ))}
         </div>
       </div>
