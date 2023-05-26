@@ -25,14 +25,6 @@ export const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>ianbalijawa</h5>
-            <a href="https://m.me/ianbalijawa" target="_blank">
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+256787444814</h5>

@@ -2,7 +2,7 @@
 import "@/css/companies.css";
 import { useEffect, useState } from "react";
 
-type Company = "TLABS" | "DEVANALYST" | "ATAANO";
+type Company = "TLABS" | "INGRESS" | "ATAANO";
 
 interface IData {
   title: string;
@@ -11,7 +11,7 @@ interface IData {
 }
 
 export const Companies = () => {
-  const [companyList] = useState<Company[]>(["TLABS", "DEVANALYST", "ATAANO"]);
+  const [companyList] = useState<Company[]>(["TLABS", "INGRESS", "ATAANO"]);
   const [_, setCompany] = useState<Company>("TLABS");
   const [active, setActive] = useState<Company>("TLABS");
 
@@ -28,10 +28,11 @@ export const Companies = () => {
       date: "October - Present",
       title: "Full Stack Engineer @ TLABS",
       desc: [
-        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-        "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+        "Led a team of 5 software engineers in the successful delivery of a new product feature that increased revenue by 15%",
+        "Mentored and coached team members to improve their technical skills, resulting in a 25% increase in code quality and a 40% reduction in code review time.",
+        "Worked closely with cross-functional teams, including product management and UX design, to ensure the development of high-quality products that meet customer needs and expectations.",
+        "Scripted unique test plans, test scripts and processes to remove previously known redundancy by 40% and ensured predictable outcomes",
+        "Conducted regular performance reviews and provided feedback to team members, resulting in increased employee engagement and job satisfaction.",
       ],
     });
   }, []);
@@ -45,10 +46,11 @@ export const Companies = () => {
         date: "November - February 2022",
         title: "Frontend Engineer @ ATAANO",
         desc: [
-          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
-          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
-          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
-          "Developed and styled interactive web applications for ATAANO using Ember and SCSS.",
+          "Delivered conﬁguration management tools to track server settings for performance testing which saved 25% of initial machine setup",
+          "Authored code ﬁxes and enhancements for inclusion in future code releases and patches.",
+          "Reviewed code, debugged problems, and corrected issues.",
+          "Optimized customer resources and reduce turnaround time by 20%",
+          "Performed root cause analysis for more than 10 issues to identify bugs and rolled out ﬁxes to production within 24 hours",
         ],
       });
     }
@@ -59,23 +61,25 @@ export const Companies = () => {
         date: "October - Present",
         title: "Full Stack Engineer @ TLABS",
         desc: [
-          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
-          "Developed and styled interactive web applications for TLABS using Ember and SCSS.",
+          "Led a team of 5 software engineers in the successful delivery of a new product feature that increased revenue by 15%",
+          "Mentored and coached team members to improve their technical skills, resulting in a 25% increase in code quality and a 40% reduction in code review time.",
+          "Worked closely with cross-functional teams, including product management and UX design, to ensure the development of high-quality products that meet customer needs and expectations.",
+          "Scripted unique test plans, test scripts and processes to remove previously known redundancy by 40% and ensured predictable outcomes",
+          "Conducted regular performance reviews and provided feedback to team members, resulting in increased employee engagement and job satisfaction.",
         ],
       });
     }
-    if (location == "DEVANALYST") {
-      setActive("DEVANALYST");
+    if (location == "INGRESS") {
+      setActive("INGRESS");
       setData({
         date: "July - December 2017",
-        title: "Frontend Engineer @ ATAANO",
+        title: "Frontend Engineer @ INGRESS",
         desc: [
-          "Developed and styled interactive web applications using Ember and SCSS.",
-          "Developed and styled interactive web applications using Ember and SCSS.",
-          "Developed and styled interactive web applications using Ember and SCSS.",
-          "Developed and styled interactive web applications using Ember and SCSS.",
+          "Led a team of 5 software engineers in the successful delivery of a new product feature that increased revenue by 15%",
+          "Mentored and coached team members to improve their technical skills, resulting in a 25% increase in code quality and a 40% reduction in code review time.",
+          "Worked closely with cross-functional teams, including product management and UX design, to ensure the development of high-quality products that meet customer needs and expectations.",
+          "Scripted unique test plans, test scripts and processes to remove previously known redundancy by 40% and ensured predictable outcomes",
+          "Conducted regular performance reviews and provided feedback to team members, resulting in increased employee engagement and job satisfaction.",
         ],
       });
     }
