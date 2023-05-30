@@ -12,6 +12,7 @@ export interface ProjectProps {
   imgs: string[];
   dir: string;
   img: string;
+  href: string;
 }
 
 export const Project: FC<ProjectProps> = ({
@@ -21,6 +22,7 @@ export const Project: FC<ProjectProps> = ({
   tags,
   title,
   img,
+  href,
 }) => {
   const size = useScreenWidth();
 
@@ -38,6 +40,9 @@ export const Project: FC<ProjectProps> = ({
       />
       <div className="info">
         <p className="featured">Featured project</p>
+        <a href={href} className="btn btn-primary" target={"_blank"}>
+          Live Demo
+        </a>
         <p className="title">{title}</p>
         <p className="description">{description}</p>
         <div className="tags">

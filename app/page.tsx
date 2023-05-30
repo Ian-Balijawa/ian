@@ -21,6 +21,7 @@ const projects: ProjectProps[] = [
     tags: ["VsCode", "theme", "JSON", "Dark", "JS"],
     title: "Dark Night Rises",
     img: "/images/theme.png",
+    href: "https://marketplace.visualstudio.com/items?itemName=ianbalijawa.dark-night-rises",
   },
   {
     description:
@@ -30,6 +31,7 @@ const projects: ProjectProps[] = [
     tags: ["VsCode", "theme", "JSON", "Dark", "JS"],
     title: "Silver Light",
     img: "/images/silverlight.png",
+    href: "https://marketplace.visualstudio.com/items?itemName=ianbalijawa.silver-light",
   },
   {
     description:
@@ -39,6 +41,7 @@ const projects: ProjectProps[] = [
     tags: ["VsCode", "theme", "JSON", "Dark", "JS"],
     title: "Website PortFolio",
     img: "/images/mysite.png",
+    href: "https://iyn.vercel.app",
   },
 ];
 
@@ -47,19 +50,22 @@ export default function Index() {
     <>
       <Hero />
       <Navbar />
-      {projects.map(({ img, description, dir, imgs, tags, title }, idx) => {
-        return (
-          <Project
-            key={idx}
-            img={img}
-            description={description}
-            dir={dir}
-            imgs={imgs}
-            title={title}
-            tags={tags}
-          />
-        );
-      })}
+      {projects.map(
+        ({ href, img, description, dir, imgs, tags, title }, idx) => {
+          return (
+            <Project
+              key={idx}
+              img={img}
+              description={description}
+              dir={dir}
+              imgs={imgs}
+              title={title}
+              tags={tags}
+              href={href}
+            />
+          );
+        }
+      )}
       <About />
       <Experience />
       <Companies />
